@@ -1,0 +1,76 @@
+.sobre-ativo {
+ padding-top: 5rem;
+ text-align: center;
+}
+
+.certificados-header {
+ font-size: 2.5rem;
+ color: #000;
+ margin: 20px;
+}
+
+.card-certificado {
+ width: 85%;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ align-items: center;
+ margin-bottom: 50px;
+ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+ border-radius: 8px;
+ text-align: center;
+}
+
+.container-txt-certificado {
+ padding: 10px;
+}
+
+h2.txt-certificado {
+ font-size: 2.5rem;
+ color: #000;
+ margin: 1rem;
+}
+
+h2.txt-certificado::before {
+ display: none;
+}
+
+.p-certificado {
+ color: #525252;
+ font-size: 1rem;
+ font-weight: 600;
+ text-align: left;
+}
+
+.img-certificado {
+ width: 100%;
+ border-radius: 8px;
+ transition: transform 0.5s;
+}
+
+.img-certificado:hover {
+ transform: scale(0.9);
+}
+
+@media (max-width: 950px) {
+ .card-certificado {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 30px;
+ }
+ .img-certificado {
+  width: 80%;
+  height: 40%;
+ }
+ .p-certificado {
+  text-align: center;
+ }
+ .container-txt-certificado {
+  grid-row: 1 / 1;
+ }
+ .certificados-grid {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+ }
+}

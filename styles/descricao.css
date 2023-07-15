@@ -1,0 +1,144 @@
+.descricao {
+ height: 450px;
+ background-image: url(../imgs/fundo-de-tecnologia-de-wireframe-abstrato-cinza.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ padding-top: 4.5rem;
+}
+
+.descricao-apresentacao {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ font-size: 1.5rem;
+ gap: 40px;
+ text-align: center;
+}
+
+.titulo {
+ font-size: 2rem;
+}
+
+.titulo::after {
+ content: "|";
+ color: var(--detalhes-cor);
+ margin-left: 5px;
+ opacity: 1;
+ animation: pisca 0.7s infinite;
+}
+
+@keyframes pisca {
+ 0%,
+ 100% {
+  opacity: 1;
+ }
+ 50% {
+  opacity: 0;
+ }
+}
+
+.descricao-apresentacao a {
+ padding: 8px;
+ background: #e3e3e3;
+ border-radius: 4px;
+ font-size: 1rem;
+ font-weight: bold;
+}
+
+.container-descricao {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ width: 90%;
+ margin: 0 auto;
+ padding-top: 5rem;
+}
+
+.txt-container::before {
+ content: "";
+ display: flex;
+ width: 0.5rem;
+ height: 100%;
+ background: #000;
+ position: absolute;
+ left: -1rem;
+ border-radius: 4px;
+}
+
+.txt-container {
+ position: relative;
+}
+
+.titulo-descricao {
+ font-size: 4rem;
+ color: #000;
+}
+
+.titulo-descricao span {
+ color: var(--detalhes-cor);
+}
+
+#curriculo {
+ transition: 0.4s;
+ font-size: 0.875rem;
+ padding: 8px 12px;
+ color: #fff;
+ background: #000;
+ text-transform: uppercase;
+}
+
+#curriculo:hover {
+ background: #fff;
+ transition: 0.4s;
+ color: #000;
+}
+
+/* Responsivo */
+
+@media (max-width: 1100px) {
+ .titulo-descricao {
+  font-size: 3.5rem;
+ }
+ .descricao-apresentacao {
+  font-size: 1rem;
+ }
+}
+
+@media (max-width: 950px) {
+ .titulo-descricao {
+  font-size: 3rem;
+ }
+
+ .descricao-apresentacao {
+  font-size: 1rem;
+ }
+
+ .container-descricao {
+  padding-top: 4rem;
+  gap: 1rem;
+ }
+
+ .txt-container {
+  margin: 0 auto;
+ }
+ .descricao {
+  height: 400px;
+ }
+}
+
+@media (max-width: 800px) {
+ .container-descricao {
+  grid-template-columns: 1fr;
+  padding-top: 2rem;
+  gap: 1rem;
+ }
+ .descricao-apresentacao {
+  margin: 0 auto;
+  text-align: center;
+  gap: 14px;
+ }
+ .descricao-apresentacao span {
+  font-size: 2rem;
+ }
+}

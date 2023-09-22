@@ -13,7 +13,6 @@
 - JavaScript
 - Figma
 - Git e GitHub
-- Bootstrap
 
 ## 📱 Contact 
 Linkedin : [https://www.linkedin.com/in/kaic-mach ](https://www.linkedin.com/in/kaicmachado/)<br>
